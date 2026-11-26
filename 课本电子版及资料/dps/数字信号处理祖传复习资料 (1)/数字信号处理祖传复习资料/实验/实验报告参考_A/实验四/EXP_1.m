@@ -1,0 +1,11 @@
+clear all;
+wc=2*pi*300;wr=2*pi*200;rp=0.8;rs=20;
+[N,wn]=cheb1ord(wc,wr,rp,rs,'s');
+[num,den]=cheby1(N,rp,wn,'high','s');
+omega = [0: 200: 2000*pi];
+h = freqs(num,den,omega);
+gain = 20*log10(abs(h));
+plot (omega/(2*pi),gain);
+axis([0,800,-80,10]); grid;
+xlabel('Frequency in Hz'); ylabel('Gain in dB');
+title('切比雪夫模拟高通滤波器');

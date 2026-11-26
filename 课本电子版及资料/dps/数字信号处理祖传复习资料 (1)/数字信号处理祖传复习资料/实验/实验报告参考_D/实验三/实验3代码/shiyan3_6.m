@@ -1,0 +1,94 @@
+N1=8;
+n=0:N1-1;
+M=512;
+xe=randn(1,M);
+N=N1+M-1;
+c1=zeros(size(n));
+c2=zeros(size(n));
+c3=zeros(size(n));
+for k=1:N1
+    if n(k)<4&n(k)>=0;
+        c1(k)=n(k);
+    elseif n(k)<8&n(k)>=4;
+        c2(k)=8-n(k);
+    else 
+        c3(k)=0;
+    end
+end
+xc=c1+c2+c3;
+%x2卷积前频谱
+subplot(411);
+Xe=fft(xe);
+w=0:M-1;
+stem(w,abs(Xe));
+xlabel('w');
+ylabel('幅度');
+title('卷积前xe频谱');
+%线性卷积
+subplot(412);
+xian=conv(xc,xe);
+a1=0:N-1;
+stem(a1,abs(fft(xian)));
+title('线性卷积');
+%重叠相加法
+subplot(413);
+N2=64;
+L=N1+N2-1;
+H=fft(xc,L);
+X1=xe(1:N2);
+X2=xe(N2+1:2*N2);
+X3=xe(2*N2+1:3*N2);
+X4=xe(3*N2+1:4*N2);
+X5=xe(4*N2+1:5*N2);
+X6=xe(5*N2+1:6*N2);
+X7=xe(6*N2+1:7*N2);
+X8=xe(7*N2+1:8*N2);
+Y1=fft(X1,L).*H;
+Y2=fft(X2,L).*H;
+Y3=fft(X3,L).*H;
+Y4=fft(X4,L).*H;
+Y5=fft(X5,L).*H;
+Y6=fft(X6,L).*H;
+Y7=fft(X7,L).*H;
+Y8=fft(X8,L).*H;
+y1=ifft(Y1,L);
+y2=ifft(Y2,L);
+y3=ifft(Y3,L);
+y4=ifft(Y4,L);
+y5=ifft(Y5,L);
+y6=ifft(Y6,L);
+y7=ifft(Y7,L);
+y8=ifft(Y8,L);
+add=[y1(1:N2),y1(N2+1:L)+y2(1:N1-1),y2(N1:N2),y2(N2+1:L)+y3(1:N1-1),y3(N1:N2),y3(N2+1:L)+y4(1:N1-1),y4(N1:N2),y4(N2+1:L)+y5(1:N1-1),y5(N1:N2),y5(N2+1:L)+y6(1:N1-1),y6(N1:N2),y6(N2+1:L)+y7(1:N1-1),y7(N1:N2),y7(N2+1:L)+y8(1:N1-1),y8(N1:N2)];
+stem(abs(fft(add)));
+title('重叠相加法');
+
+%重叠保留法
+subplot(414);
+A1=[zeros(1,N1-1),xe(1:N2)];
+A2=xe(2*N2-L+1:2*N2);
+A3=xe(3*N2-L+1:3*N2);
+A4=xe(4*N2-L+1:4*N2);
+A5=xe(5*N2-L+1:5*N2);
+A6=xe(6*N2-L+1:6*N2);
+A7=xe(7*N2-L+1:7*N2);
+A8=xe(8*N2-L+1:8*N2);
+B1=fft(A1,L).*H;
+B2=fft(A2,L).*H;
+B3=fft(A3,L).*H;
+B4=fft(A4,L).*H;
+B5=fft(A5,L).*H;
+B6=fft(A6,L).*H;
+B7=fft(A7,L).*H;
+B8=fft(A8,L).*H;
+b1=ifft(B1,L);
+b2=ifft(B2,L);
+b3=ifft(B3,L);
+b4=ifft(B4,L);
+b5=ifft(B5,L);
+b6=ifft(B6,L);
+b7=ifft(B7,L);
+b8=ifft(B8,L);
+retain=[b1(N1:L),b2(N1:L),b3(N1:L),b4(N1:L),b5(N1:L),b6(N1:L),b7(N1:L),b8(N1:L)];
+stem(abs(fft(retain)));
+title('重叠保留法');

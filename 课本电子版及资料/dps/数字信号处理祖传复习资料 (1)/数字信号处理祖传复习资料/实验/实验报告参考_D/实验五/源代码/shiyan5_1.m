@@ -1,0 +1,13 @@
+N=45;
+b1=boxcar(N);
+b2=hamming(N);
+b3=blackman(N);
+[h1,w1]=freqz(b1,1);
+[h2,w2]=freqz(b2,1);
+[h3,w3]=freqz(b3,1);
+plot(w1/pi,20*log10(abs(h1)),'r',w2/pi,20*log10(abs(h2)),'b',w3/pi,20*log10(abs(h3)),'g');
+legend('矩形窗','汉明窗','布莱克曼窗');
+axis([0,1,-100,50]);
+grid;
+xlabel('归一化频率');
+ylabel('幅度/dB');

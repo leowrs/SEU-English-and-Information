@@ -1,0 +1,52 @@
+N=40;
+beta1=4;
+beta2=6;
+beta3=10;
+hk=[zeros(1,4) 0.5 ones(1,3) 0.5 zeros(1,3) 0.5 ones(1,3) 0.5 zeros(1,3) zeros(1,3) -0.5 -ones(1,3) -0.5 zeros(1,3) -0.5 -ones(1,3) -0.5 zeros(1,4)];
+k=0:N-1;
+hn=real(ifft(hk.*exp(-1i*pi*(N-1)*k/N)));
+[h,w]=freqz(hn,1);
+f=w/pi;
+f0=[0 0.2 0.2 0.4 0.4 0.6 0.6 0.8 0.8 1];
+a=[0 0 1 1 0 0 1 1 0 0];
+h1=fir2(N-1,f0,a,kaiser(N,beta1));
+h2=fir2(N-1,f0,a,kaiser(N,beta2));
+h3=fir2(N-1,f0,a,kaiser(N,beta3))
+[H1,w1]=freqz(h1);
+[H2,w2]=freqz(h2);
+[H3,w3]=freqz(h3);
+f1=w1/pi;
+f2=w2/pi;
+f3=w3/pi;
+fh=20*log10(abs(h));
+fh1=20*log10(abs(H1));
+fh2=20*log10(abs(H2));
+fh3=20*log10(abs(H3));
+figure(1);
+plot(f,fh,'r')
+hold on;
+plot(f1,fh1,'g')
+hold on;
+plot(f2,fh2,'b')
+hold on;
+plot(f3,fh3,'k');
+legend('频率采样法','beta=4','beta=6','beta=10');
+xlabel('归一化频率/pi');ylabel('幅度/dB');title('频率采样法、凯塞窗设计线性相位FIR滤波器 幅频响应');
+axis([0 1 -140 10]);
+grid on;
+fa=angle(h);
+fa1=angle(H1);
+fa2=angle(H2);
+fa3=angle(H3);
+figure(2);
+plot(f,fa,'k');
+hold on;
+plot(f1,fa1,'r');
+hold on;
+plot(f2,fa2,'g');
+hold on;
+plot(f3,fa3,'b');
+legend('频率采样法','beta=4','beta=6','beta=10');
+xlabel('归一化频率/pi');ylabel('相位');title('频率采样法、凯塞窗设计线性相位FIR滤波器 相频响应');
+axis([0 1 -5 5]);
+grid on;

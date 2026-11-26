@@ -1,0 +1,14 @@
+a=[0 1];
+dev=[0.01 0.109];
+fs=5000;
+f=[500 800];
+[M,fpts,mag,wt]=firpmord(f,a,dev,fs);
+h=firpm(M,fpts,mag,wt);
+[H,w]=freqz(h);
+w1=w/2/pi*fs;
+fh=20*log10(abs(H));
+plot(w1,fh);
+title('雷米兹交替算法 线性相位FIR高通滤波器 幅频响应');
+xlabel('频率/Hz');
+ylabel('幅度');
+grid on;

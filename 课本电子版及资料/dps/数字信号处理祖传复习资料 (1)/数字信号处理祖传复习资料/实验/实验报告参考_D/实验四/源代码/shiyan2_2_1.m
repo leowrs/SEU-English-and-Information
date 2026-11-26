@@ -1,0 +1,31 @@
+clear all;
+%脉冲响应不变法
+wp=2*pi*200;
+ws=2*pi*300;
+rp=1;
+rs=25;
+[N,wn]=buttord(wp,ws,rp,rs,'s');
+[B,A]=butter(N,wn,'s');
+[num1,den1]=impinvar(B,A,1000);
+sys1=tf(num1,den1,1/1000)
+[h1,w]=freqz(num1,den1);
+f=w/pi*500;
+plot(f,20*log10(abs(h1)),'-.');
+grid;
+hold on;
+%双线性变换法
+wc=2*1000*tan(2*pi*200/(2*1000));
+wt=2*1000*tan(2*pi*300/(2*1000));
+rp=1;
+rs=25;
+[N,wn]=buttord(wc,wt,rp,rs,'s');
+[B,A]=butter(N,wn,'s');
+[num,den]=bilinear(B,A,1000);
+sys2=tf(num,den,1/1000)
+[h2,w]=freqz(num,den);
+f=w/pi*500;
+plot(f,20*log10(abs(h2)),'-');
+legend("脉冲响应不变法",'双线性变换法');
+axis([0,500,-80,10]);
+xlabel("频率/Hz");
+ylabel("幅度/dB");

@@ -1,0 +1,71 @@
+N=40;
+fr=[0 0.15 0.2 0.35 0.4 0.55 0.6 0.75 0.8 1];
+ar=[0 0 1 1 0 0 1 1 0 0];
+fs=2*pi;
+wt=[2 1 2 1 2];
+hr=firpm(N-1,fr,ar,wt);
+[H,wr]=freqz(hr,1);
+fr=wr/pi;
+figure(1);
+subplot(2,1,1);plot(fr,20*log10(abs(H)));
+xlabel('归一化频率/\pi');ylabel('幅度/dB');
+subplot(2,1,2);plot(fr,angle(H));
+xlabel('归一化频率/\pi');ylabel('相位');
+hk=[zeros(1,4) 0.5 ones(1,3) 0.5 zeros(1,3) 0.5 ones(1,3) 0.5 zeros(1,7) -0.5 -1*ones(1,3) -0.5 zeros(1,3) -0.5 -1*ones(1,3) -0.5 zeros(1,3)];
+beta1=4;
+beta2=6;
+beta3=10;
+k=0:N-1;
+hn=real(ifft(hk.*exp(-1i*pi*(N-1)*k/N)));
+[h,w]=freqz(hn,1);
+f=w/pi;
+f0=[0 0.2 0.2 0.4 0.4 0.6 0.6 0.8 0.8 1];
+a=[0 0 1 1 0 0 1 1 0 0];
+h1=fir2(N-1,f0,a,kaiser(N,beta1));
+h2=fir2(N-1,f0,a,kaiser(N,beta2));
+h3=fir2(N-1,f0,a,kaiser(N,beta3));
+[H1,w1]=freqz(h1);
+[H2,w2]=freqz(h2);
+[H3,w3]=freqz(h3);
+f1=w1/pi;
+f2=w2/pi;
+f3=w3/pi;
+frh=20*log10(abs(H));
+fh=20*log10(abs(h));
+f1h=20*log10(abs(H1));
+f2h=20*log10(abs(H2));
+f3h=20*log10(abs(H3));
+figure(2);
+plot(fr,frh,'m')
+hold on;
+plot(f,fh,'k')
+hold on;
+plot(f1,f1h,'r');
+hold on;
+plot(f2,f2h,'g')
+hold on;
+plot(f3,f3h,'b');
+legend('雷米兹交替算法','频率采样法','beta=4','beta=6','beta=10');
+xlabel('归一化频率/pi');ylabel('幅度/dB');
+title('FIR滤波器 幅频响应');
+axis([0 1 -140 10]);
+grid on; 
+fra=angle(H);
+fa=angle(h);
+f1a=angle(H1);
+f2a=angle(H2);
+f3a=angle(H3);
+figure(3);
+plot(fr,fra,'m')
+hold on;
+plot(f,fa,'k')
+hold on;
+plot(f1,f1a,'r');
+hold on;
+plot(f2,f2a,'g')
+hold on;
+plot(f3,f3a,'b');
+legend('雷米兹交替算法','频率采样法','beta=4','beta=6','beta=10');
+xlabel('归一化频率/pi');ylabel('相位');
+title('FIR滤波器 相频响应');
+grid on;

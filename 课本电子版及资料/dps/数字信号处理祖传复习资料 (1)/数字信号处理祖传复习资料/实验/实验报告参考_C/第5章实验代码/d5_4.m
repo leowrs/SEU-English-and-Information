@@ -1,0 +1,43 @@
+N=40;
+beta1=4;
+beta2=6;
+beta3=10;
+f=[0 0.2 0.2 0.4 0.4 0.6 0.6 0.8 0.8 1];
+a=[0 0 1 1 0 0 1 1 0 0];
+h1=fir2(N-1,f,a,kaiser(N,beta1));
+h2=fir2(N-1,f,a,kaiser(N,beta2));
+h3=fir2(N-1,f,a,kaiser(N,beta3));
+[H1,w1]=freqz(h1);
+[H2,w2]=freqz(h2);
+[H3,w3]=freqz(h3);
+w1=w1/pi;
+w2=w2/pi;
+w3=w3/pi;
+f1=20*log10(abs(H1));
+f2=20*log10(abs(H2));
+f3=20*log10(abs(H3));
+figure(1);
+plot(w1,f1,'r')
+hold on;
+plot(w2,f2,'g');
+hold on;
+plot(w3,f3,'b');
+legend('beta=4','beta=6','beta=10');
+xlabel('归一化频率/pi');ylabel('幅度/dB');
+title('凯塞窗设计线性相位FIR滤波器 幅频响应');
+axis([0 1 -140 10]);
+grid on; 
+figure(2);
+fa1=angle(H1);
+fa2=angle(H2);
+fa3=angle(H3);
+plot(w1,fa1,'r')
+hold on;
+plot(w2,fa2,'g')
+hold on;
+plot(w3,fa3,'b');
+legend('beta=4','beta=6','beta=10');
+xlabel('归一化频率/pi');ylabel('相位');
+title('凯塞窗设计线性相位FIR滤波器 相频响应');
+axis([0 1 -5 5]);
+grid on;

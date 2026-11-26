@@ -1,0 +1,13 @@
+clear all;
+N=45;
+wn1=kaiser(N,0);
+wn2=hamming(N);
+wn3=blackman(N);
+[h1,w1] = freqz(wn1,N);
+[h2,w2] = freqz(wn2,N);
+[h3,w3] = freqz(wn3,N);
+plot(w1/pi,20*log10(abs(h1)),'-',w2/pi,20*log10(abs(h2)),'--',w3/pi,20*log10(abs(h3)),':');
+axis([0,1,-120,10]);grid;
+xlabel('归一化频率/\pi'); ylabel('幅度/dB');
+title('三种窗口函数');
+legend('矩形窗','汉明窗','布莱克曼窗',3);

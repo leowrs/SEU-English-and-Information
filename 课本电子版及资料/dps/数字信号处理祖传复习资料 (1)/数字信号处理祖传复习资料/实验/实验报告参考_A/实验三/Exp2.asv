@@ -1,0 +1,11 @@
+clear;
+x=0:15;
+a=0.1;
+f=0.0625;
+y=exp(-(a.*x)).*sin(2.*pi.*f.*x);
+figure(1);
+subplot(1,2,1);
+stem(x,y);
+xk=fft(y,16);
+subplot(1,2,2);
+stem(x,abs(xk));

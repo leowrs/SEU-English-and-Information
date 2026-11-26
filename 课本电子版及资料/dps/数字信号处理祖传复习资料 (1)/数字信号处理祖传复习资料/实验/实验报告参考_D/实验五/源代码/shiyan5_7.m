@@ -1,0 +1,22 @@
+fc=800;
+fr=500;
+Ap=1;
+As=40;
+fs=5000;
+f=[500 800];
+a=[0 1];
+dev=[0.01 0.109];
+[M,fpts,mag,wt]=remezord(f,a,dev,fs);
+b=remez(M,fpts,mag,wt);
+[h w]=freqz(b,1);
+subplot(211);
+plot(w*2500/pi,20*log10(abs(h)));
+axis([0 2500 -80 10]);grid;
+xlabel('频率/Hz');
+ylabel('幅度/dB');
+title('雷米兹交替算法设计的线性相位高通FIR数字滤波器')
+subplot(212);
+plot(w*2500/pi,angle(h));
+grid;
+xlabel('频率/Hz');
+ylabel('相位');
