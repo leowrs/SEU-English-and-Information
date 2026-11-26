@@ -1,0 +1,96 @@
+{
+  "variants": [
+    {
+      "name": "img1_base_1000",
+      "width": 738,
+      "height": 1000,
+      "keypoint_count": 874
+    },
+    {
+      "name": "img1_rotate_30",
+      "width": 922,
+      "height": 1000,
+      "keypoint_count": 671
+    },
+    {
+      "name": "img1_dark",
+      "width": 738,
+      "height": 1000,
+      "keypoint_count": 742
+    },
+    {
+      "name": "img1_bright",
+      "width": 738,
+      "height": 1000,
+      "keypoint_count": 973
+    },
+    {
+      "name": "img1_scale_700",
+      "width": 517,
+      "height": 700,
+      "keypoint_count": 394
+    },
+    {
+      "name": "img1_scale_1200",
+      "width": 885,
+      "height": 1200,
+      "keypoint_count": 1113
+    },
+    {
+      "name": "img2_base_1000",
+      "width": 1000,
+      "height": 919,
+      "keypoint_count": 1141
+    }
+  ],
+  "matches": [
+    {
+      "query": "img1_base_1000",
+      "train": "img1_rotate_30",
+      "match_count": 363,
+      "match_rate": 0.540984,
+      "query_keypoint_count": 874,
+      "train_keypoint_count": 671
+    },
+    {
+      "query": "img1_base_1000",
+      "train": "img1_dark",
+      "match_count": 669,
+      "match_rate": 0.901617,
+      "query_keypoint_count": 874,
+      "train_keypoint_count": 742
+    },
+    {
+      "query": "img1_base_1000",
+      "train": "img1_bright",
+      "match_count": 410,
+      "match_rate": 0.469108,
+      "query_keypoint_count": 874,
+      "train_keypoint_count": 973
+    },
+    {
+      "query": "img1_base_1000",
+      "train": "img1_scale_700",
+      "match_count": 275,
+      "match_rate": 0.69797,
+      "query_keypoint_count": 874,
+      "train_keypoint_count": 394
+    },
+    {
+      "query": "img1_base_1000",
+      "train": "img1_scale_1200",
+      "match_count": 461,
+      "match_rate": 0.52746,
+      "query_keypoint_count": 874,
+      "train_keypoint_count": 1113
+    },
+    {
+      "query": "img1_base_1000",
+      "train": "img2_base_1000",
+      "match_count": 87,
+      "match_rate": 0.099542,
+      "query_keypoint_count": 874,
+      "train_keypoint_count": 1141
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+% Original Author: GitHub @leowrs (https://github.com/leowrs)
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{fancyhdr}  % 用于设置页眉页脚
+\usepackage{tipa}      % 添加IPA语音符号支持
+
+% 使用fontspec和xeCJK来设置字体
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{Times New Roman}  % 设置英文字体为Times New Roman
+\setCJKmainfont{SimSun}  % 设置中文字体为宋体
+\setCJKmonofont{SimSun}  % 设置中文等宽字体，修复CJKttdefault警告
+
+% 设置页眉高度
+\setlength{\headheight}{15pt}  % 修复headheight警告
+
+% 设置页眉
+\pagestyle{fancy}
+\fancyhf{}  % 清除所有页眉页脚
+\fancyhead[L]{HW1.2: Morphology}
+\fancyhead[C]{@leowrs}
+\fancyhead[R]{—}
+\renewcommand{\headrulewidth}{0.4pt}  % 页眉横线
+
+\begin{document}
+
+% 确保第一页也有页眉
+\thispagestyle{fancy}
+
+\section*{HW1.2: Morphology}
+
+\subsection*{I.}
+
+\noindent \textbf{(1) disappearance}
+
+\noindent \textbf{Tree Diagram:}
+\begin{tikzpicture}[level distance=1.5cm, 
+                    level 1/.style={sibling distance=3cm},
+                    level 2/.style={sibling distance=2cm},
+                    level 3/.style={sibling distance=1.5cm}]
+\node {Noun}
+    child {node {dis-}
+    }
+    child {node {Noun}
+            child {node {Verb}
+                child {node {appear}}
+            }
+            child {node {-ance}
+            }
+    };
+\end{tikzpicture}
+
+\noindent \textbf{Morphological Rules:}
+\begin{enumerate}
+    \item \texttt{appear + -ance $\rightarrow$ appearance} (Verb + Nominalizing suffix)
+    \item \texttt{dis- + appearance $\rightarrow$ disappearance} (Negative prefix + Noun)
+\end{enumerate}
+
+\bigskip
+
+\noindent \textbf{(2) irreplaceability}
+
+\noindent \textbf{Tree Diagram:}
+\begin{tikzpicture}[level distance=1.5cm, 
+                    level 1/.style={sibling distance=3cm},
+                    level 2/.style={sibling distance=2cm},
+                    level 3/.style={sibling distance=1.5cm}]
+\node {Noun}
+    child {node {Adjective}
+        child {node {ir-}
+        }
+        child {node {Adjective}
+            child {node {replace}}
+            child {node {-able}}
+        }
+    }
+    child {node {-ity}
+    };
+\end{tikzpicture}
+
+\noindent \textbf{Morphological Rules:}
+\begin{enumerate}
+    \item \texttt{replace + -able $\rightarrow$ replaceable} (Verb + Adjectival suffix)
+    \item \texttt{replaceable + -ity $\rightarrow$ replaceability} (Adjective + Nominalizing suffix)
+\end{enumerate}
+
+\bigskip
+
+\noindent \textbf{(3) misconceive}
+
+\noindent \textbf{Tree Diagram:}
+\begin{tikzpicture}[level distance=1.5cm, 
+                    level 1/.style={sibling distance=3cm}]
+\node {Verb}
+    child {node {mis-}
+    }
+    child {node {conceive}
+    };
+\end{tikzpicture}
+
+\noindent \textbf{Morphological Rules:}
+\begin{enumerate}
+    \item \texttt{mis- + conceive $\rightarrow$ misconceive} (Negative Prefix + Verb)
+\end{enumerate}
+
+\bigskip
+
+\subsection*{II.}
+
+\noindent \textbf{(a) 'able to be less dark'}
+
+\noindent \textbf{Tree Diagram:}
+\begin{tikzpicture}[level distance=1.5cm, 
+                    level 1/.style={sibling distance=3cm},
+                    level 2/.style={sibling distance=2cm}]
+\node {Adjective}
+    child {node {Verb}
+        child {node {un-}}
+        child {node {dark}}
+        child {node {-en}}
+    }
+    child {node {-able}
+    };
+\end{tikzpicture}
+\bigskip
+
+\noindent \textbf{(b) 'unable to be made dark'}
+
+\noindent \textbf{Tree Diagram:}
+\begin{tikzpicture}[level distance=1.5cm, 
+                    level 1/.style={sibling distance=3.5cm},
+                    level 2/.style={sibling distance=2cm}]
+\node {Adjective}
+    child {node {un-}
+    }
+    child {node {Adjective}
+        child {node {Verb}
+                child {node {Adjective}
+                child {node {dark}}
+            }
+            child {node {-en}}
+        } 
+        child {node {-able}
+        } 
+    };
+\end{tikzpicture}
+
+\subsection*{III.}
+
+\noindent \textbf{(1) defamiliarized (past tense)}
+
+\noindent \textbf{Tree Diagram:}
+\begin{tikzpicture}[level distance=1.5cm, 
+                    level 1/.style={sibling distance=3cm},
+                    level 2/.style={sibling distance=2.5cm},
+                    level 3/.style={sibling distance=2cm}]
+\node {past tense}
+    child {node {Verb}
+        child {node {de-}
+        }
+        child {node {Verb}
+            child {node {familiar}}
+            child {node {-ize}}
+        }
+    }
+    child {node {-ed}
+    };
+\end{tikzpicture}
+
+\bigskip
+
+\noindent \textbf{(2) unlikeliest (superlative)}
+
+\noindent \textbf{Tree Diagram:}
+\begin{tikzpicture}[level distance=1.5cm, 
+                    level 1/.style={sibling distance=3cm},
+                    level 2/.style={sibling distance=2.5cm},
+                    level 3/.style={sibling distance=2cm}]
+\node {superlative}
+    child {node {Adjective}
+        child {node {un-}}
+        child {node {Adjective}
+            child {node {like}}
+            child {node {-ly}}
+        }
+    }
+    child {node {-est}
+    };
+\end{tikzpicture}
+
+\section*{IV. Sanskrit}
+
+\noindent \textbf{(1) Sanskrit morphemes:}
+
+\begin{itemize}
+    \item gen.sg.  $\rightarrow$ \texttt{-as}
+    \item dat.sg.  $\rightarrow$ \texttt{-e}
+    \item inst.sg. $\rightarrow$ \texttt{-ā}
+    \item gen.pl.  $\rightarrow$ \texttt{-ām}
+    \item dat.pl.  $\rightarrow$ \texttt{-bhyas}
+    \item loc.sg.  $\rightarrow$ \texttt{-i}
+\end{itemize}
+
+\bigskip
+
+\noindent \textbf{(2) Allomorphs:}
+
+\begin{itemize}
+    \item 'mind': \texttt{mano}
+    \item 'wonder': \texttt{vapus, vapur}
+    \item 'devout': \texttt{suhavis, suhavir}
+\end{itemize}
+
+\bigskip
+
+\noindent \textbf{(3) Conditioning environment:}
+
+\noindent \textbf{Stems Ending in High Vowels:} \\ 
+owel-initial suffix: Final s changes to retroflex ʂ (e.g., asti → aʂi). This aligns with the retroflexion seen in sandhi rules when sibilants precede vowels \\
+Consonant-initial suffix:
+Insertion of r (e.g., i + t → irt), but this applies only to certain verb roots (e.g., kṛ → kartṛ).
+Final s universally drops (e.g., niś + ta → niṣṭa), consistent with consonant cluster simplification
+\bigskip
+
+\noindent \textbf{Central/low vowel stems:} \\
+Vowel-initial suffix: Final s remains s (e.g., dasa + a → dasā), as seen in nominal declensions like deva → deve
+
+\bigskip
+
+\noindent \textbf{Universal Rules:} \\
+Sibilant Deletion: Final s always drops before consonants (e.g., vas + tum → vastum → vaṣṭum), per the Visarga Sandhi
+Vowel Strengthening: Overlooked in your original text, roots like nī → naya show vowel gradation (guṇa) when combined with suffixes
+
+\end{document}

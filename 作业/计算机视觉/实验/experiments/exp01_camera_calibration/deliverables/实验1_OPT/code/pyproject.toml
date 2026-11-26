@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cv-course"
+version = "0.1.0"
+description = "Computer vision course experiments."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "python-docx",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
