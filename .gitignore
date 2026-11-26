@@ -1,0 +1,62 @@
+# === OS / Editor / Temp ===
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp*
+~$*
+*.bak
+
+# === IDE & Build Caches ===
+.vs/
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+*.ipch
+*.suo
+*.sdf
+*.opensdf
+*.pdb
+*.ilk
+*.obj
+*.tlog
+*.idb
+*.lastbuildstate
+*.recipe
+x64/
+Debug/
+Release/
+
+# === LaTeX Intermediate Files ===
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.out
+
+# === Multisim Security Copies ===
+*.ms13 (Security copy)
+
+# === Large Files (>= 95 MB) Exceeding GitHub 100 MB Hard Limit ===
+# Host these via Cloud Drive (Baidu/Aliyun/OneDrive) or GitHub Releases (see LARGE_FILES_MANIFEST.md)
+作业/数电实验/实验九/6模式流水灯_first edition.mp4
+课本电子版及资料/微机/《微型计算机系统原理及应用》_12286291.pdf
+课本电子版及资料/微机/微机复习/12286291微型计算机系统原理及应用.pdf
+课本电子版及资料/微波器件/微波工程（第四版） (David M.Pozar) (z-library.sk, 1lib.sk, z-lib.sk)_3.pdf
+课本电子版及资料/德语/《新编大学德语》（第二版）学生用书 第1册/《新编大学德语》（第二版）学生用书_第1册\[www.TopSage.com\].pdf
+课本电子版及资料/德语/《新编大学德语》（第二版）学生用书 第2册/《新编大学德语》（第二版）学生用书_第2册\[www.TopSage.com\].pdf
+课本电子版及资料/数电/2012-Digital Design_ A Systems Approach.pdf
+课本电子版及资料/数电/Lite304口袋实验室软件.zip
+课本电子版及资料/模电/EPIV2_16_5.zip
+课本电子版及资料/物理/14857301.pdf
+课本电子版及资料/物理/Sears and Zemansky's Univ. Physics with Mod. Physics  ( PDFDrive ).pdf
+课本电子版及资料/物理/西尔斯当代大学物理 下卷 (吴平，邱红梅，徐美，季燕江, 译；（美）休·D.杨，罗杰·A.弗里德曼，A.路易斯·福特.) (Z-Library).pdf
+课本电子版及资料/电磁场/电磁场与电磁波理论基础（第二版）.pdf
+课本电子版及资料/电路/电路 第6版_230625_165338.pdf
+课本电子版及资料/系统实验（微波）/AWR Design Environment.zip
+课本电子版及资料/英语/高英/新世纪高等院校英语专业本科生系列教材 综合教程 6 学生用书 (何兆熊，张春柏编, Zhaoxiong He, Chunbai Zhang, 何兆熊主编 etc.) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+课本电子版及资料/通原/通信系统 第四版 (（加）Simon Haykin （西蒙·赫金） 著；宋铁成，徐平平，徐智勇 等译) (Z-Library).pdf
+课本电子版及资料/通原/通原祖传复习资料 (1)/通原祖传复习资料/西蒙.赫金 通信系统（第4版 中文版）完整书签版by Sidney.pdf
+课本电子版及资料/高数/Calculus 9E.pdf

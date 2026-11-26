@@ -1,0 +1,55 @@
+# License & Copyright Notice
+
+This repository adopts a **dual-licensing + third-party copyright exclusion** scheme to clearly separate original student-created work from third-party course materials.
+
+---
+
+## 1. Original Documentation, Study Notes, Lab Reports & Papers — CC BY-NC-SA 4.0
+
+Unless otherwise noted, all original non-code materials created by **@leowrs** (including `README.md`, `LARGE_FILES_MANIFEST.md`, course study notes, lab reports, course papers, slides, and summaries) are licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)**.
+
+- **Attribution (BY)**: You must give appropriate credit to `GitHub: @leowrs (https://github.com/leowrs)`, provide a link to the license, and indicate if changes were made.
+- **NonCommercial (NC)**: You may **NOT** use these materials for commercial purposes (including paid reselling on Xianyu, Taobao, CSDN, WeChat paid groups, etc.).
+- **ShareAlike (SA)**: If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+Full legal text:
+- Chinese: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-hans
+- English: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en
+
+---
+
+## 2. Original Source Code & Scripts — MIT License
+
+All original source code, scripts, and LaTeX/build templates created by **@leowrs** in `作业/` (such as `.py`, `.cpp`, `.h`, `.c`, `.m`, `.mlx`, `.sql`, `.tex`, `.ipynb`) are licensed under the **MIT License**:
+
+```text
+MIT License
+
+Copyright (c) 2026 leowrs (https://github.com/leowrs)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+## 3. Third-Party Materials & Textbooks — All Rights Reserved by Original Authors
+
+All third-party materials included in this repository for educational reference—including all files under `课本电子版及资料/` (textbooks, instructors' lecture slides, past exam papers, official solution manuals, and reference tools) as well as third-party research papers, IC datasheets, assignment PDFs, and official solutions stored inside `作业/` (marked with `仅供学习交流使用，版权归原作者所有`)—are **EXCLUDED** from the CC BY-NC-SA 4.0 and MIT licenses above.
+
+Their copyrights belong strictly to their respective authors, instructors, and publishers. They are provided solely for personal study and academic reference. If any content infringes upon your copyright, please open an Issue on GitHub for immediate removal.
