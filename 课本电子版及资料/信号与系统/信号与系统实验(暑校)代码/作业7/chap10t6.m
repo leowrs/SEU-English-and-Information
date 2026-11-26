@@ -1,0 +1,13 @@
+clear
+clc
+t=0:0.0001:0.5;
+e=exp(-0.2*t+eps).*sin(100*t+eps)./(100*t+eps).*heaviside(t);
+p=(square(400*pi*t,50)+1)/2;
+a=p.*e;
+[nb,na]=butter(4,200,'s');
+sys=tf(nb,na);
+c=lsim(sys,a,t);
+subplot(1,2,1)
+plot(t,e);
+subplot(1,2,2)
+plot(t,c);

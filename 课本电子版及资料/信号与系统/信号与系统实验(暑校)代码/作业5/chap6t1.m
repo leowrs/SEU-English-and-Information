@@ -1,0 +1,16 @@
+clc
+%1
+Ns1=[1];
+Ds1=[1,1];
+sys1=tf(Ns1,Ds1)
+[z1,p1,k1]=tf2zp(Ns1,Ds1)
+%2
+Ns2=[10,10];
+Ds2=[1,0];
+sys2=tf(Ns2,Ds2)
+[z2,p2,k2]=tf2zp(Ns2,Ds2)
+%3
+Ns3=[10];
+Ds3=[1,-5,0];
+sys3=tf(Ns3,Ds3)
+[z3,p3,k3]=tf2zp(Ns3,Ds3)
