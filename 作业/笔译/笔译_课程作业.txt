@@ -1,0 +1,26 @@
+AI algorithms are transforming scan analysis, which leads to interesting opportunities for earlier disease detection, improved diagnoses, and, eventually, better patient outcomes. AI denotes computer systems that imitate human intelligence in particular activities. In medical imaging, AI algorithms are trained on huge medical image datasets (X-rays, CT scans, MRIs) and related diagnoses to identify patterns and delicate internal anomalies in the images. Thus, it assists healthcare professionals in improving accuracy since AI analyzes immense amounts of data with influential details and detects slight indications of illness that can be unobserved by the human eye. AI is a reliable "second-reader" that provides systematic analysis and reduces the risk of missed diagnoses. Furthermore, AI helps adapt treatment plans based on particular characteristics identified in the patient's imaging scans. This customized approach leads to effective treatments with possibly fewer side effects.
+However, its effective implementation necessitates attentive attention to practical and ethical issues. Ensuring that AI-powered health innovations are available worldwide without provoking existing inequalities in health is a major challenge. The accuracy of AI algorithms relies on the representativeness and quality of the trained data. Thus, biases in the trained data cause biased AI outputs. AI is seen as a powerful tool to help radiologists but cannot replace their clinical judgment and expertise.
+
+人工智能算法正在改变影像扫描分析的方式，这为更早期的疾病检测、更准确的诊断以及最终更好的患者预后带来了新的机遇。人工智能（AI）指的是能够在特定任务中模仿人类智能的计算机系统。在医学影像领域，AI算法通过在大量医学影像数据集（如X光片、CT扫描、MRI）及其相关诊断结果上进行训练，从而识别图像中的模式与细微的内部异常。因此，它能够帮助医疗专业人员提高诊断的准确性，因为AI可以分析海量数据中的细节信息，并检测出人眼可能忽略的轻微病变迹象。AI是一位可靠的“第二读片者”，能够提供系统化的分析，降低漏诊风险。
+此外，AI还可根据患者影像中识别出的特定特征，辅助制定个性化治疗方案。这种定制化的方法使治疗更加高效，同时可能减少副作用。然而，要实现AI的有效应用，必须谨慎关注其实践与伦理问题。如何在全球范围内推广AI驱动的医疗创新，而不加剧现有的健康不平等，是一项重大挑战。AI算法的准确性依赖于训练数据的代表性与质量，因此，若训练数据存在偏差，AI输出结果也会带有偏见。AI被视为帮助放射科医生的强大工具，但它无法取代医生的临床判断与专业经验。by gpt
+
+
+人工智能（AI）算法正在改变扫描分析方式，这为疾病的早期检测、诊断水平的提升，以及最终改善患者预后带来了可观的机遇。AI 指的是在特定任务中模拟人类智能的计算机系统。在医学影像领域，人工智能算法会通过海量医学影像数据集（包括 X 光片、计算机断层扫描（CT）图像、磁共振成像（MRI）图像）及相关诊断结果进行训练，从而识别图像中的特征模式和细微的内部异常。
+因此，AI 能够协助医疗专业人员提高诊断准确性：它可以分析包含关键信息的海量数据，并检测出人类肉眼可能无法察觉的细微病症迹象。作为可靠的 “二次阅片者”，AI 不仅能提供系统性的分析，还能降低漏诊风险。此外，AI 可根据患者影像扫描中识别出的特定特征，助力调整治疗方案。这种个性化方案有助于实现更有效的治疗，且可能减少副作用。
+然而，要有效应用 AI，必须密切关注实际应用与伦理层面的问题。确保人工智能驱动的医疗创新能在全球范围内普及，同时避免加剧现有的医疗不平等，是当前面临的一大挑战。人工智能算法的准确性取决于训练数据的代表性与质量，因此，训练数据中存在的偏差会导致 AI 输出结果产生偏差。目前，AI 被视为辅助放射科医生工作的强大工具，而非能够取代其临床判断与专业经验的替代品。by doubao
+
+人工智能（AI）算法正在改变影像扫描分析方式，这为疾病的早期检测、诊断水平的提升，以及最终改善患者预后带来了可观的机遇。人工智能（AI）指的是能在特定任务中模拟人类智能的计算机系统。在医学影像领域，AI 算法会通过海量医学影像数据集（包括 X 光片、计算机断层扫描（CT）图像、磁共振成像（MRI）图像）及相关诊断结果进行训练，从而识别图像中的特征模式和细微的内部异常。
+因此，AI 能协助医疗专业人员提高诊断准确性：它可分析包含关键信息的海量数据，并检测出人类肉眼可能无法察觉的细微病症迹象。AI 是可靠的 “第二读片者”，既能提供系统化分析，又能降低漏诊风险。此外，AI 还可根据患者影像扫描中识别出的特定特征，辅助调整治疗方案。这种定制化方法能让治疗更高效，同时可能减少副作用。
+然而，要有效应用 AI，必须密切关注实践与伦理层面的问题。确保 AI 驱动的医疗创新能在全球范围内普及，同时避免加剧现有的医疗不平等，是当前面临的一大挑战。AI 算法的准确性依赖于训练数据的代表性与质量，因此训练数据中存在的偏差，会导致 AI 输出结果产生偏差。目前，AI 被视为辅助放射科医生工作的强大工具，但无法取代医生的临床判断与专业经验。by self trans
+
+analysis
+1.首次提及 “AI” 时，保留 GPT 译本的 “人工智能（AI）” 全称标注，比豆包译本仅写 “AI” 更符合中文科技文本的规范，方便非专业读者理解
+2.关键概念 “second-reader” 选择 GPT 译本的 “第二读片者”，比豆包译本 “二次阅片者” 更贴合原文 “第二” 的语义，同时保留 “读片者” 这一医疗领域常用表述
+3.伦理问题部分，整合 GPT 译本 “推广 AI 驱动的医疗创新” 与豆包译本 “全球范围内普及”，最终用 “在全球范围内普及 AI 驱动的医疗创新”，既保留 “普及” 的结果导向，又明确 “AI 驱动” 的核心属性，语句更紧凑。
+
+
+BL：1. 分析部分的形式是没有问题的，下次练习可尝试考虑引入句式和上下文的讨论
+2. 注明AI工具名称
+3. 下次用word文档提交，不然无法在文字上批注
+
+8/10
