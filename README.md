@@ -41,8 +41,8 @@
 ## 大体积文件与仓库使用说明
 
 - GitHub 对单文件存在 **100 MB** 硬限制（部分高清扫描教材、实验演示视频与 EDA 软件压缩包超过该阈值）。
-- 本仓库已通过 [`.gitignore`](<.gitignore>) 自动排除所有 `>= 95 MB` 的超限文件，确保本地 `git clone` / `git push` 顺畅无阻。
-- 完整的超限大文件列表与网盘/Releases 拆分托管建议，请查阅 [**`LARGE_FILES_MANIFEST.md`**](<LARGE_FILES_MANIFEST.md>)。
+- 本仓库已通过 [`.gitignore`](<.gitignore>) 自动排除所有 `>= 95 MB` 的超限文件（共 19 个、约 3.10 GB），确保本地 `git clone` / `git pull` 顺畅无阻。
+- 上述全部 19 个大体积教材、`Lite304` / `EPIV2` / `AWR` 实验软件与 `6模式流水灯` 演示视频已统一托管至 [**📦 GitHub Releases `v1.0.0`**](https://github.com/leowrs/SEU-English-and-Information/releases/tag/v1.0.0)；各文件的直链下载与本地还原路径对照表请查阅 [**`LARGE_FILES_MANIFEST.md`**](<LARGE_FILES_MANIFEST.md>)。
 
 [↑ 返回目录](#目录)
 
@@ -102,11 +102,11 @@
   - 资料：邱关源《电路》教材与习题全解、电路 2000 题、讲义 PPT → [电路教材与课件](<./课本电子版及资料/电路>)；电路实验教学计划与器件清单 → [电路实验资料](<./课本电子版及资料/电路实验>)
   - 练习：电路实验预习、Multisim 仿真、实测波形记录与报告 → [电路实验记录与报告](<./作业/电路实验>)
 - [ ] **模拟电子技术（模电）与模电实验**
-  - 资料：童诗白《模电》及习题解答、谢家奎《电子线路》、教学 PPT 与口袋实验室工具 → [模电教材与课件](<./课本电子版及资料/模电>) ｜ [模电实验参考](<./课本电子版及资料/模电实验>)
+  - 资料：童诗白《模电》及习题解答、谢家奎《电子线路》、教学 PPT 与口袋实验室工具 → [模电教材与课件](<./课本电子版及资料/模电>) ｜ [模电实验参考](<./课本电子版及资料/模电实验>) ｜ [📦 Release 补充包（EPIV2 软件）](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/04_Analog_Electronics_EPIV2_16_5_Software.zip)
   - 练习：二极管整流、BJT 特性、多级放大与负反馈、三角波发生器等 Multisim 仿真（`.ms13`）与实验报告 → [模电实验作业](<./作业/模电实验>)
 - [ ] **数字逻辑电路（数电）与数电实验**
-  - 资料：*Digital Design* 英文教材、讲义 PPT、Lite304 口袋实验室说明与课后习题解答 → [数电教材与课件](<./课本电子版及资料/数电>)
-  - 练习：实验一至实验九完整报告、电路图、74 系列芯片 Datasheet 手册及无声实验演示视频 → [数电实验作业](<./作业/数电实验>)
+  - 资料：*Digital Design* 英文教材、讲义 PPT、Lite304 口袋实验室说明与课后习题解答 → [数电教材与课件](<./课本电子版及资料/数电>) ｜ [📦 Release 补充包（*Digital Design* 原版教材）](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/10_Digital_Design_A_Systems_Approach_2012.pdf) ｜ [📦 Release 补充包（Lite304 软件）](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/03_Digital_Logic_Lite304_Pocket_Lab_Software.zip)
+  - 练习：实验一至实验九完整报告、电路图、74 系列芯片 Datasheet 手册及无声实验演示视频 → [数电实验作业](<./作业/数电实验>) ｜ [📦 Release 补充包（实验九 6 模式流水灯演示视频）](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/01_Digital_Logic_Lab9_6Mode_LED_Demo.mp4)
 - [ ] **电子工艺实践**
   - 资料：立创 EDA 简明教程与课程计划 → [电子工艺资料](<./课本电子版及资料/电子工艺实践>)
   - 练习：流水灯仿真工程与实验报告 → [电子工艺报告](<./作业/电子工艺实践>)
@@ -137,7 +137,7 @@
     - 太赫兹前沿技术课程考核要求 → [太赫兹前沿](<./课本电子版及资料/微波、毫米波与太赫兹前沿技术>)
   - 练习：微波思政/器件作业与第一至十次微波实验报告+MATLAB 绘图脚本 → [微波](<./作业/微波>) ｜ [微波器件作业](<./作业/微波器件>) ｜ [微波实验报告](<./作业/微波实验>)
 - [ ] **射频与微波系统实验（AWR）**
-  - 资料：射频口袋实验室说明书、芯片规格书、S 参数文件（`.s2p`）与 AWR 仿真安装包 → [微波系统实验资料](<./课本电子版及资料/系统实验（微波）>)
+  - 资料：射频口袋实验室说明书、芯片规格书、S 参数文件（`.s2p`）与 AWR 仿真安装包 → [微波系统实验资料](<./课本电子版及资料/系统实验（微波）>) ｜ [📦 Release 补充包（AWR 安装包）](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/02_Microwave_System_Lab_AWR_Design_Environment.zip)
   - 练习：VNA 实测曲线、AWR 仿真工程与实验报告 → [微波系统实验报告](<./作业/系统实验（微波）>)
 - [ ] **通信原理（通原）**
   - 资料：Simon Haykin *Communication Systems (4th Ed)* 中英文教材与习题解答、宋铁成教材与指导书、中英文课件与复习资料 → [通信原理全套资料](<./课本电子版及资料/通原>)

@@ -1,31 +1,32 @@
 # 大体积文件与商业教材拆分清单 (`LARGE_FILES_MANIFEST`)
 
-> 说明：GitHub 对单个文件设有 **100 MB** 硬限制（且建议单文件不超过 **50 MB**，整个仓库建议控制在 **1–5 GB** 以内）。
-> 为保证仓库可顺畅 `git push` 与克隆，所有 **`>= 95 MB`** 的文件已自动加入根目录 [`.gitignore`](.gitignore)，推荐上传至 **网盘（百度网盘 / 阿里云盘 / OneDrive）** 或 **GitHub Releases**，并在 `README.md` 对应课程条目中附上提取链接。
+> 说明：GitHub 对单个 Git 跟踪文件设有 **100 MB** 硬限制（且建议单文件不超过 **50 MB**）。
+> 为保证仓库可顺畅 `git clone` 与 `git pull`，全部 **19 个 `>= 95 MB` 的超限文件（共约 3.10 GB）** 已通过根目录 [`.gitignore`](.gitignore) 自动排除，并统一上传托管至 [**📦 GitHub Releases `v1.0.0`**](https://github.com/leowrs/SEU-English-and-Information/releases/tag/v1.0.0)。
+> 你可以直接点击下表中的直链按需下载；如需在本地还原完整目录，将下载后的文件重命名为“仓库相对路径”中的原文件名并放回对应目录即可（已被 `.gitignore` 忽略，不影响 `git pull`）。
 
-## 一、超过 GitHub 100 MB 限制的文件（共 19 个，已写入 `.gitignore`）
+## 一、已托管至 GitHub Releases `v1.0.0` 的超限文件（共 19 个，已写入 `.gitignore`）
 
-| 体积 (MB) | 类型建议 | 仓库相对路径 |
-| ---: | :--- | :--- |
-| 438.5 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/物理/Sears and Zemansky's Univ. Physics with Mod. Physics  ( PDFDrive ).pdf` |
-| 263.3 MB | 商业/课程实验软件安装包（建议网盘分流） | `课本电子版及资料/系统实验（微波）/AWR Design Environment.zip` |
-| 251.3 MB | 商业/课程实验软件安装包（建议网盘分流） | `课本电子版及资料/数电/Lite304口袋实验室软件.zip` |
-| 250.8 MB | 商业/课程实验软件安装包（建议网盘分流） | `课本电子版及资料/模电/EPIV2_16_5.zip` |
-| 238.0 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/物理/14857301.pdf` |
-| 200.8 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/高数/Calculus 9E.pdf` |
-| 154.4 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/通原/通原祖传复习资料 (1)/通原祖传复习资料/西蒙.赫金 通信系统（第4版 中文版）完整书签版by Sidney.pdf` |
-| 138.1 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/数电/2012-Digital Design_ A Systems Approach.pdf` |
-| 128.2 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/通原/通信系统 第四版 (（加）Simon Haykin （西蒙·赫金） 著；宋铁成，徐平平，徐智勇 等译) (Z-Library).pdf` |
-| 125.9 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/德语/《新编大学德语》（第二版）学生用书 第2册/《新编大学德语》（第二版）学生用书_第2册[www.TopSage.com].pdf` |
-| 120.4 MB | 实验演示视频（建议 GitHub Releases 或网盘） | `作业/数电实验/实验九/6模式流水灯_first edition.mp4` |
-| 117.2 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/电路/电路 第6版_230625_165338.pdf` |
-| 116.6 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/德语/《新编大学德语》（第二版）学生用书 第1册/《新编大学德语》（第二版）学生用书_第1册[www.TopSage.com].pdf` |
-| 113.5 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/微机/微机复习/12286291微型计算机系统原理及应用.pdf` |
-| 113.0 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/微机/《微型计算机系统原理及应用》_12286291.pdf` |
-| 105.4 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/微波器件/微波工程（第四版） (David M.Pozar) (z-library.sk, 1lib.sk, z-lib.sk)_3.pdf` |
-| 102.6 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/物理/西尔斯当代大学物理 下卷 (吴平，邱红梅，徐美，季燕江, 译；（美）休·D.杨，罗杰·A.弗里德曼，A.路易斯·福特.) (Z-Library).pdf` |
-| 100.9 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/电磁场/电磁场与电磁波理论基础（第二版）.pdf` |
-| 95.1 MB | 大型电子教材 PDF（建议网盘分流 / 版权合规提示） | `课本电子版及资料/英语/高英/新世纪高等院校英语专业本科生系列教材 综合教程 6 学生用书 (何兆熊，张春柏编, Zhaoxiong He, Chunbai Zhang, 何兆熊主编 etc.) (z-library.sk, 1lib.sk, z-lib.sk).pdf` |
+| 体积 (MB) | 类型说明 | Release 直链下载 | 仓库相对路径 |
+| ---: | :--- | :---: | :--- |
+| 438.5 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/06_University_Physics_Sears_Zemansky_En.pdf) | `课本电子版及资料/物理/Sears and Zemansky's Univ. Physics with Mod. Physics  ( PDFDrive ).pdf` |
+| 263.3 MB | 课程仿真软件安装包（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/02_Microwave_System_Lab_AWR_Design_Environment.zip) | `课本电子版及资料/系统实验（微波）/AWR Design Environment.zip` |
+| 251.3 MB | 课程实验软件安装包（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/03_Digital_Logic_Lite304_Pocket_Lab_Software.zip) | `课本电子版及资料/数电/Lite304口袋实验室软件.zip` |
+| 250.8 MB | 课程实验软件安装包（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/04_Analog_Electronics_EPIV2_16_5_Software.zip) | `课本电子版及资料/模电/EPIV2_16_5.zip` |
+| 238.0 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/07_University_Physics_Reference_14857301.pdf) | `课本电子版及资料/物理/14857301.pdf` |
+| 200.8 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/05_Calculus_9th_Edition.pdf) | `课本电子版及资料/高数/Calculus 9E.pdf` |
+| 154.4 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/15_Communication_Systems_Haykin_4th_Ed_Bookmarked_Zh.pdf) | `课本电子版及资料/通原/通原祖传复习资料 (1)/通原祖传复习资料/西蒙.赫金 通信系统（第4版 中文版）完整书签版by Sidney.pdf` |
+| 138.1 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/10_Digital_Design_A_Systems_Approach_2012.pdf) | `课本电子版及资料/数电/2012-Digital Design_ A Systems Approach.pdf` |
+| 128.2 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/16_Communication_Systems_Haykin_4th_Ed_SongTiecheng_Zh.pdf) | `课本电子版及资料/通原/通信系统 第四版 (（加）Simon Haykin （西蒙·赫金） 著；宋铁成，徐平平，徐智勇 等译) (Z-Library).pdf` |
+| 125.9 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/19_New_College_German_2nd_Ed_Book2.pdf) | `课本电子版及资料/德语/《新编大学德语》（第二版）学生用书 第2册/《新编大学德语》（第二版）学生用书_第2册[www.TopSage.com].pdf` |
+| 120.4 MB | 原创无声实验演示视频（`GitHub: @leowrs`） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/01_Digital_Logic_Lab9_6Mode_LED_Demo.mp4) | `作业/数电实验/实验九/6模式流水灯_first edition.mp4` |
+| 117.2 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/09_Circuits_QiuGuanyuan_6th_Ed.pdf) | `课本电子版及资料/电路/电路 第6版_230625_165338.pdf` |
+| 116.6 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/18_New_College_German_2nd_Ed_Book1.pdf) | `课本电子版及资料/德语/《新编大学德语》（第二版）学生用书 第1册/《新编大学德语》（第二版）学生用书_第1册[www.TopSage.com].pdf` |
+| 113.5 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/12_Microcomputer_System_Principles_12286291_B.pdf) | `课本电子版及资料/微机/微机复习/12286291微型计算机系统原理及应用.pdf` |
+| 113.0 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/11_Microcomputer_System_Principles_12286291_A.pdf) | `课本电子版及资料/微机/《微型计算机系统原理及应用》_12286291.pdf` |
+| 105.4 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/14_Microwave_Engineering_Pozar_4th_Ed_Zh.pdf) | `课本电子版及资料/微波器件/微波工程（第四版） (David M.Pozar) (z-library.sk, 1lib.sk, z-lib.sk)_3.pdf` |
+| 102.6 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/08_University_Physics_Sears_Vol2_Zh.pdf) | `课本电子版及资料/物理/西尔斯当代大学物理 下卷 (吴平，邱红梅，徐美，季燕江, 译；（美）休·D.杨，罗杰·A.弗里德曼，A.路易斯·福特.) (Z-Library).pdf` |
+| 100.9 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/13_Electromagnetic_Fields_and_Waves_2nd_Ed.pdf) | `课本电子版及资料/电磁场/电磁场与电磁波理论基础（第二版）.pdf` |
+| 95.1 MB | 大型电子教材 PDF（仅学习交流，版权归原作者） | [📥 下载](https://github.com/leowrs/SEU-English-and-Information/releases/download/v1.0.0/17_Advanced_English_Integrated_Course_Book6.pdf) | `课本电子版及资料/英语/高英/新世纪高等院校英语专业本科生系列教材 综合教程 6 学生用书 (何兆熊，张春柏编, Zhaoxiong He, Chunbai Zhang, 何兆熊主编 etc.) (z-library.sk, 1lib.sk, z-lib.sk).pdf` |
 
 ## 二、50–95 MB 体积预警文件（共 36 个，GitHub 会触发 Warning 但允许推送）
 
